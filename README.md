@@ -9,12 +9,15 @@ The daily planner will be for the given day with the timeblocks for the standere
 If click the clear button all information in timblock is cleared
 
 link to my GitHub Repository:
+https://github.com/Jimmy-Vela06/Module5-Work-Day-Scheduler
 
 
 WebPage
+https://jimmy-vela06.github.io/Module5-Work-Day-Scheduler/
 
 
-image
+image 
+assets/image.png
 
 i still can not uploade or open an image is VSCode!!! 
 I will speak to instructor to figure out the isse.
