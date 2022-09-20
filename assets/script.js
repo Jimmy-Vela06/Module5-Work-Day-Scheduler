@@ -1,12 +1,12 @@
 
-    //
+    //time
     let now = moment().format("dddd, MMMM Do YYYY");
     let displayDate = document.getElementById("currentDay");
     displayDate.innerHTML = now;
     let currentHour = moment().format("HH");
 
         $(".time-div").each(function() {
-        let timeDiv = $(this).attr("id").split("-");
+        let timeDiv = $(this).attr("id").split("-")[1];
 
         if (currentHour == timeDiv) {
             $(this).addClass("present");
@@ -22,19 +22,16 @@
         }
     });
 
- 
-
-    // local storage
-    $("#hour-9AM .time-block").val(localStorage.getItem("9AM"));
-    $("#hour-10AM .time-block").val(localStorage.getItem("10AM"));
-    $("#hour-11AM .time-block").val(localStorage.getItem("11AM"));
-    $("#hour-12PM .time-block").val(localStorage.getItem("12PM"));
-    $("#hour-1PM .time-block").val(localStorage.getItem("1PM"));
-    $("#hour-2PM .time-block").val(localStorage.getItem("2PM"));
-    $("#hour-3PM .time-block").val(localStorage.getItem("3PM"));
-    $("#hour-4PM .time-block").val(localStorage.getItem("4PM"));
-    $("#hour-5PM .time-block").val(localStorage.getItem("5PM"));
-
+    // application storage
+    $("#hour-09 .time-block").val(localStorage.getItem("09"));
+    $("#hour-10 .time-block").val(localStorage.getItem("10"));
+    $("#hour-11 .time-block").val(localStorage.getItem("11"));
+    $("#hour-12 .time-block").val(localStorage.getItem("12"));
+    $("#hour-13 .time-block").val(localStorage.getItem("13"));
+    $("#hour-14 .time-block").val(localStorage.getItem("14"));
+    $("#hour-15 .time-block").val(localStorage.getItem("15"));
+    $("#hour-16 .time-block").val(localStorage.getItem("16"));
+    $("#hour-17 .time-block").val(localStorage.getItem("17"));
        
      $(".saveBtn").click(function (event) {
         event.preventDefault();
@@ -42,7 +39,6 @@
         var key = $(this).parent().attr("id").split("-")[1];
         localStorage.setItem(key,value);
      });
-
      
     //Clear 
      $("#clearBtn").click(function(event) {
